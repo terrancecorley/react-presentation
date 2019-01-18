@@ -8,7 +8,7 @@ import ReactLogo from './src/ReactLogo';
 <ReactLogo />
 
 ```notes
-JavaScript library created by Facebook, open sourced 2013
+Front-end JavaScript library created by Facebook, open sourced 2013
 Unifies presentation with logic
 ```
 
@@ -54,11 +54,23 @@ import JS from './src/JS';
     </Appear>
 </ul>
 
+```notes
+- Writes like html but is NOT html
+- A lot cleaner
+- Allows us to use JavaScript expressions
+```
+
 ---
 
 ## Your first component
 
 ![](src/images/simple-btn.png)  
+
+```notes
+- Everything is scoped
+- Functional and Class components
+- Naming conventions
+```
 
 ---
 
@@ -69,6 +81,12 @@ import SimpleBtnWrapper from './src/SimpleBtnWrapper';
 
 <SimpleBtnWrapper />
 
+```notes
+- Descriptive names
+- Cleans up structure
+- Makes it more manageable
+```
+
 ---
 
 import SimpleBtn from './src/SimpleBtn';
@@ -76,6 +94,10 @@ import SimpleBtn from './src/SimpleBtn';
 ## Props
 
 ![](src/images/btn-props.png)
+
+```notes
+- Explain props before code example
+```
 
 ---
 
@@ -118,6 +140,19 @@ import SimpleBtn from './src/SimpleBtn';
     </Appear>
 </ul>
 
+```notes
+- Could even include a function to create as many SimpleBtns as needed
+```
+
+---
+
+# Props vs. State
+
+```notes
+- Props are like function params, passing to comps
+- State is managed within the comp that is declaring it, think of a local variable
+```
+
 ---
 
 import Counter from './src/Counter';
@@ -127,6 +162,15 @@ import Counter from './src/Counter';
 ![](src/images/state.png)
 
 <Counter />
+
+```notes
+- If it has state, it's a class...for now
+- Constructor? Binding?
+- You don't "update" state, you "replace" it
+- React catches state changes and update VDOM
+- PrevState
+- Notice the brackets in JSX
+```
 
 ---
 
