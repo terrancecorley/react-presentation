@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-function Button(props) {
+function SimpleBtn(props) {
     const btnStyles = {
         color: props.color,
         backgroundColor: props.backgroundColor, 
@@ -16,7 +15,10 @@ function Button(props) {
         <button style={btnStyles}>{props.text}</button>
     )
 }
-    
 
-export default Button;
+export default SimpleBtn;
+
+
+
+
 

@@ -1,4 +1,3 @@
-
 import { Head } from 'mdx-deck';
 import ReactLogo from './src/ReactLogo';
 
@@ -46,7 +45,7 @@ import Survey from './src/Survey';
 import JSX from './src/JSX';
 import JS from './src/JS';
 
-## JSX vs HTML
+## JSX vs HTML & JS
 
 <ul>
     <Appear>
@@ -57,6 +56,64 @@ import JS from './src/JS';
 
 ---
 
-import Button from './src/Button';
+## Your first component
 
-<Button text="wasssssup"/>
+![](src/images/simple-btn.png)  
+
+---
+
+![](src/images/simple-btn-wrapper.png)  
+
+
+import SimpleBtnWrapper from './src/SimpleBtnWrapper';
+
+<SimpleBtnWrapper />
+
+---
+
+import SimpleBtn from './src/SimpleBtn';
+
+## Props
+
+![](src/images/btn-props.png)
+
+---
+
+## Props continued...
+
+![](src/images/some-other-comp.png)
+
+<ul>
+    <Appear>
+        <span>
+            <SimpleBtn 
+                color="firebrickred"
+                backgroundColor="papayawhip"
+                text="Click meh" />
+        </span>
+        <span>
+            <SimpleBtn 
+                color="white"
+                backgroundColor="dodgerblue"
+                text="wassssssup" />
+        </span>
+        <span>
+            <SimpleBtn 
+                color="purple"
+                backgroundColor="orange"
+                text="i iz a btn yo" />
+        </span>
+        <span>
+            <SimpleBtn 
+                color="white"
+                backgroundColor="limegreen"
+                text="still a btn" />
+        </span>
+        <span>
+            <SimpleBtn 
+                color="gold"
+                backgroundColor="lightslategray"
+                text="yup...btn" />
+        </span>
+    </Appear>
+</ul>
